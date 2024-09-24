@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
 </head>
 <body>
 
@@ -66,13 +67,19 @@
                     <div class="form-line">
                         <div class="form-box">
                             <label for="">Password</label>
-                            <input type="password">
-                            <div class="error-message">*Passwords do not match</div>
+                            <input type="password" id="password">
+                            <div id="password-error-message" class="error-message">*Passwords do not match</div>
+
+                            <div class="password-check-box">
+                                <ul>
+                                    <li>at least 8 characters</li>
+                                </ul>
+                            </div>
                         </div>
 
                         <div class="form-box">
                             <label for="">Confirm Password</label>
-                            <input type="password">
+                            <input type="password" id="confirm_password">
                         </div>
                     </div>
 
@@ -81,7 +88,7 @@
             </div>
 
             <div class="button-container">
-                <button type="submit" form="signup-form">Create Account</button> <!-- Button außerhalb des Formulars -->
+                <button id="btn"  type="submit" form="signup-form#">Create Account</button> <!-- Button außerhalb des Formulars -->
                 <h4>Already have an account? <span>Log in</span></h4>
 
             </div>

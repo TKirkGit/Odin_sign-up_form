@@ -172,3 +172,11 @@ input[type="text"]:focus:invalid + .error-message{
 }
 
 
+.password-check-box{
+    margin-left: 2rem;
+}
+
+ul{
+    font-size: smaller;
+}
+
